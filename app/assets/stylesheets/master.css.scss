@@ -31,12 +31,14 @@
 	font-family: 'allerbold', sans-serif, serif;
 	padding-top: 25px;
 	margin-top: 5px;
+	text-align: center;
 }
 
 .links {
 	font-family: 'aller_lightreguler', sans-serif, serif;
 	padding-top: 25px;
 	margin-top: 5px;
+	text-align: right;
 }
 
 .links a {
@@ -48,4 +50,23 @@
 
 hr {
 	clear: both;
+}
+
+.footer-links {
+	text-align: left;
+	font-family: 'aller_lightreguler', sans-serif, serif;
+	color: #4b7548;
+}
+
+.footer-links:hover {
+	color: #c8f062;
+}
+
+.footer-links:visited {
+	color: #e61919;
+}
+
+.text-muted {
+	text-align: right;
+	font-family: 'aller_lightreguler', sans-serif, serif;
 }
