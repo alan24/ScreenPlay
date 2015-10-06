@@ -1,7 +1,7 @@
 class MoviesController < ApplicationController
 
 	def index
-		@movie = Movie.order("RANDOM()").first
+		@movie = Description.order("RANDOM()").first
 	end
 
 	def new
