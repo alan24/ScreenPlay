@@ -1,5 +1,10 @@
 class MoviesController < ApplicationController
+
 	def index
-		@description = Description.order("RANDOM()").first
+		@movie = Movie.order("RANDOM()").first
+	end
+
+	def new
+		@movie = Movie.new
 	end
 end

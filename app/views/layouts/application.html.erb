@@ -10,6 +10,7 @@
 
 	<header>
 		<div class="col-xs-1">
+			<%= link_to root_path do %>
 			<div class="rectangle">
 				<h4 class="logo-title">Movies<h4>
 			</div>
@@ -18,8 +19,10 @@
 			Add movies here whether the movie was great or awful or in-between!
 		</div>
 		<div class="col-xs-5 links">
-			<%= link_to 'Add Movies Here', '#' %>
+			<%= link_to 'Add Movies Here', new_movie_path %>
 			<%= link_to 'About', '#' %>
+		</div>
+		<% end %>
 		</div>
 	</header>
 
@@ -32,8 +35,8 @@
 
 	<div class="footer">
     	<div class="container">
-    		<div class="col-xs-6">
-    			<%= link_to "This is a great website to read about movies!", "#", :class => "footer-links" %><br />
+    		<div class="col-xs-6 footer-links">
+    			This is a great website to read about movies!<a href="http://www.imdb.com"><br />
     			<%= link_to "Another great movie website!", "#", :class => "footer-links" %>
       		</div>
       		<div class="col-xs-6">
