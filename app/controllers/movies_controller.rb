@@ -7,7 +7,7 @@ class MoviesController < ApplicationController
 	def create
 		@movie = Movie.create(movie_params)
 		if @movie.invalid?
-			flash[:error] = 'Could not enter the data in'
+			flash[:error] = 'Could not enter the data in. Please, enter all the missing data.'
 		end
 		redirect_to root_path
 	end
