@@ -1,10 +1,10 @@
 <h1>Enter tv shows here</h1>
 <%= simple_form_for @television do |f| %>
-	<%= f.input :title %>
-	<%= f.input :actors %>
-	<%= f.input :genres %>
-	<%= f.input :channels %>
-	<%= f.input :description %>
+	<%= f.input :title, :placeholder => 'Mad Men' %>
+	<%= f.input :actors, :placeholder => 'Jon Hamm, Elisabeth Moss' %>
+	<%= f.input :genres, :placeholder => 'Period Drama' %>
+	<%= f.input :channels, :placeholder => 'AMC' %>
+	<%= f.input :description, :placeholder => 'About business in the 1960\'s' %>
 	<br /><br />
-	<%= f.submit 'Create', :class => 'btn btn-danger' %>
+	<%= f.submit 'Create', :class => 'btn btn-success' %>
 <% end %>

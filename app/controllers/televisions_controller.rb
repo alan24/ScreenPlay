@@ -9,8 +9,11 @@ class TelevisionsController < ApplicationController
 	end
 
 	def create
-		@televison = Television.create(quote_params)
-		redirect_to shows_path
+		@television = Television.create(quote_params)
+		if @television.invalid?
+			flash[:error] = "<strong>The data was invalid.<strong>Reenter the data."
+		end
+		redirect_to televisions_path
 	end
 
 	private
