@@ -38,6 +38,9 @@ gem 'bootstrap-sass', '~> 3.3.5'
 # install simple_form
 gem 'simple_form'
 
+# install factory girl to have test driven development
+gem 'factory_girl_rails', '~> 4.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

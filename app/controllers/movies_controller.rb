@@ -12,6 +12,9 @@ class MoviesController < ApplicationController
 		redirect_to root_path
 	end
 
+	def show
+	end
+
 	private
 
 	def movie_params
