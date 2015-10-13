@@ -16,16 +16,19 @@
 			</div>
 		</div>
     <div class="col-xs-1">
+      <%= link_to televisions_path do %>
       <div class="rectangle">
         <h4 class="second-logo-title">TV Shows</h4>
       </div>
     </div>
+    <% end %>
 		<div class="col-xs-5 description">
 			Add movies here whether the movie was great or awful or in-between!
 		</div>
 		<div class="col-xs-5 links">
 <!-- Button trigger modal -->
       <%= link_to 'Add movies here', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
+      <%= link_to 'Add TV shows here', new_television_path %>
 		</div>
     <% end %>
 	</header>

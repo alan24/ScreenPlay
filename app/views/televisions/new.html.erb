@@ -1,0 +1,10 @@
+<h1>Enter tv shows here</h1>
+<%= simple_form_for @television do |f| %>
+	<%= f.input :title %>
+	<%= f.input :actors %>
+	<%= f.input :genres %>
+	<%= f.input :channels %>
+	<%= f.input :description %>
+	<br /><br />
+	<%= f.submit 'Create', :class => 'btn btn-danger' %>
+<% end %>
